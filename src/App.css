@@ -1,0 +1,951 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600;800;900&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Noto Sans', 'Open Sans', 'Roboto', sans-serif;
+}
+
+nav {
+  background: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  padding: 1.5% 12%;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Open sans';
+  font-weight: 700;
+}
+
+nav .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 5px;
+}
+
+nav .link {
+  display: flex;
+  text-decoration: none;
+}
+
+nav .link p {
+  margin: 10px 5px;
+}
+
+nav .link .account-icon {
+  font-size: 40px;
+}
+
+nav .admin-link {
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid #6495ED;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+nav .seller-link {
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid #6495ED;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.5s ease;
+
+}
+
+nav .admin-link:hover {
+  background: #6495ED;
+  color: #fff;
+}
+
+nav .seller-link:hover {
+  background: #6495ED;
+  color: #fff;
+}
+
+nav button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+/* Header Page */
+
+header {
+  height: 70vh;
+}
+
+header img {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header .text {
+  position: relative;
+  color: #fff;
+  padding: 100px;
+}
+
+header .text h2 {
+  font-size: 70px;
+  font-family: cursive;
+}
+
+
+/* Section Page */
+
+section {
+  /* height: 50vh; */
+  padding: 1.5% 12%;
+  /* background: red; */
+}
+
+section .section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+section .section-container .card-content {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+section .section-container .card-content img {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+
+/* footer page */
+
+footer {
+  background: #000;
+  height: 70vh;
+  padding: 1.5% 12%;
+}
+
+footer .footer-container {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+}
+
+footer .social-links img {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* login Page */
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login form {
+  text-align: center;
+  margin: 80px;
+  background: #fff;
+  width: 35%;
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.login form h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.login form .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login form .input-box label {
+  font-size: 18px;
+}
+
+.login input {
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.login form button {
+  border: none;
+  background: blue;
+  border-radius: 5px;
+  width: 100%;
+  padding: 3%;
+  color: #fff;
+  font-size: 17px;
+}
+
+.login form .bottom {
+  display: flex;
+  float: right;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.login form .bottom .register-btn {
+  text-decoration: none;
+}
+
+.login form .bottom .register-btn:hover {
+  text-decoration: underline;
+}
+
+
+/* Register Page */
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register form {
+  text-align: center;
+  margin: 33px;
+  background: #fff;
+  width: 35%;
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.register form h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.register form .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0px;
+  text-align: left;
+}
+
+.register form .input-box label {
+  font-size: 18px;
+}
+
+.register input {
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.register form button {
+  border: none;
+  background: blue;
+  border-radius: 5px;
+  width: 100%;
+  padding: 3%;
+  color: #fff;
+  font-size: 17px;
+}
+
+.register form .bottom {
+  display: flex;
+  float: right;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.register form .bottom .login-btn {
+  text-decoration: none;
+}
+
+.register form .bottom .login-btn:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Seller Register Page */
+
+/* .body{
+  background: #F3F4F7;
+  height: 100vh;
+} */
+
+.seller-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seller-register form {
+  text-align: center;
+  margin: 10px;
+  background: #fff;
+  width: 45%;
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.seller-register form h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.seller-register form .top-register {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.seller-register form .top-register .top {
+  display: flex;
+  gap: 10px;
+  /* flex-direction: row; */
+}
+
+
+.seller-register form .top-register .top .input-box {
+  width: 100%;
+}
+
+
+.seller-register form .top-register .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* margin: 10px 0px; */
+  text-align: left;
+}
+
+.seller-register form .top-register .input-box input {
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  /* border: none; */
+}
+
+.seller-register form .middle-register {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.seller-register form .middle-register .middle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.seller-register form .middle-register .middle .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  /* margin: 10px 0px; */
+}
+
+.seller-register form .middle-register .middle .input-box input {
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  /* border: none; */
+}
+
+
+.seller-register form .middle-register .input-box input {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  /* border: none; */
+}
+
+.seller-register form button {
+  border: none;
+  background: blue;
+  border-radius: 5px;
+  width: 100%;
+  padding: 3%;
+  color: #fff;
+  font-size: 17px;
+}
+
+.seller-register form .bottom {
+  display: flex;
+  float: right;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.seller-register form .bottom .login-btn {
+  text-decoration: none;
+}
+
+.seller-register form .bottom .login-btn:hover {
+  text-decoration: underline;
+}
+
+.seller-register form .input-box input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+
+/* Customer Profile Page */
+
+.container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* height: 80vh; */
+  margin-top: 20px;
+  padding: 0px 300px;
+}
+
+.container .profile-container {
+  width: 100%;
+  text-align: center;
+  padding: 3%;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+
+.profile-container form .profile-input-box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+.profile-container form .profile-input-box input {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 15px;
+  outline: none;
+}
+
+.profile-container form button {
+  background: blue;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+/* Customer Home Page */
+
+.customer-page-container {
+  /* background: red; */
+  margin: 1.5% 12%;
+  padding: 1%;
+}
+
+.customer-page-container form {
+  width: 100%;
+}
+
+.customer-page-container form input {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.customer-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card-component {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #cccc;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.card-component:hover {
+  box-shadow: 2px 3px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-component img {
+  width: 200px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-component .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+
+
+/* Seller Profile Page */
+
+.seller-profile {
+  margin: 55px;
+  text-align: center;
+}
+
+.seller-profile .seller-profile-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 150px;
+}
+
+.seller-profile .seller-profile-container .seller-input {
+  gap: 10px;
+  display: flex;
+  text-align: left;
+}
+
+.seller-profile .seller-profile-container .seller-input .input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.seller-profile .seller-profile-container .seller-input .input-box input {
+  height: 50px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.seller-profile .seller-profile-container button {
+  height: 50px;
+  border: none;
+  background: #6495ED;
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+/* Seller View Items */
+
+.items-container {
+  margin: 1.5% 12%;
+  text-align: center;
+}
+
+.items-container .additem {
+  float: right;
+  text-decoration: none;
+  background: #6495ED;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.items-container .additem:hover {
+  background: none;
+  border: 1px solid #6495ED;
+  color: #6495ED;
+}
+
+.items-container .items-card-container {
+  /* background: red; */
+  padding-top: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  /* padding-left: 30px; */
+}
+
+.items-container .search-box {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.items-container .search-box form {
+  width: 80%;
+}
+
+.items-container .search-box form input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding-left: 10px;
+}
+
+.items-card-container .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items-card-container .card {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.items-card-container .card img {
+  height: 200px;
+}
+
+.items-card-container .card:hover {
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Seller Add Items */
+
+.additems-container {
+  margin: 2% 10%;
+  text-align: center;
+}
+
+.additems-container form {
+  /* background: red; */
+  padding-bottom: 20px;
+}
+
+.additems-container .add-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 1.5% 12%;
+}
+
+.add-container .input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  gap: 8px;
+}
+
+.add-container .input-box .image {
+  padding-top: 10px;
+}
+
+.add-container .input-box input {
+  height: 50px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.add-container .input-box select {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.additems-container form button {
+  border: none;
+  background: #6495ED;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+/* Seller Page Delivery boys */
+
+.boys-container {
+  margin: 2% 12%;
+  text-align: center;
+}
+
+.boys-container .add-boys-container {
+  /* background: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.boys-container .link {
+  float: right;
+  text-decoration: none;
+}
+
+.add-boys-container .input-box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.add-boys-container .input-box input {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.boys-container form {
+  margin-top: 50px;
+}
+
+.boys-container form button {
+  border: none;
+  background: #6495ED;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+
+/* Seller Page view Delivery boys */
+
+.view-boys-container {
+  margin: 2% 12%;
+  text-align: center;
+}
+
+.view-boys-container table {
+  margin-top: 50px;
+}
+
+.view-boys-container table select {
+  border: 1px solid #ccc;
+  outline: none;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+
+/* Admin Home page view all customers */
+
+.table-container {
+  padding: 30px 170px;
+  text-align: center;
+}
+
+.table-container table {
+  margin-top: 20px;
+}
+
+.table-container table select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  outline: none;
+  padding-left: 5px;
+}
+
+
+/* Admin Page view all Sellers */
+
+.view-seller-container {
+  margin: 2% 12%;
+  text-align: center;
+}
+
+.view-container table {
+  margin-top: 30px;
+}
+
+.view-container table select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  outline: none;
+  padding-left: 5px;
+}
+
+
+/* Cart Page */
+
+.cart-container {
+  margin: 1.5% 12%;
+}
+
+.cart-container .cart-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cart-box-container {
+  text-align: center;
+  width: 100%;
+}
+
+.cart-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-card-content {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: "20px";
+  border-radius: 5px;
+}
+
+.cart-box-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.cart-container-right {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 20px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cart-box-checkout {
+  text-align: center;
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px 3px;
+}
+
+.cart-box-checkout .input-box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  padding: 5px 10px;
+}
+
+.cart-box-checkout .input-box input {
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-box-checkout button {
+  border: none;
+  background: #6495ED;
+  color: #fff;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+/* View Customer Transactions in Customer Page */
+
+.transaction-container {
+  /* background: red; */
+  margin: 1.2% 12%;
+}
+
+.transaction-container table {
+  margin-top: 30px;
+}
+
+.users-trans-product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.users-trans-product-container img {
+  width: 150px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+/* Seller transactions Page */
+
+.seller-trans-container {
+  margin: 1.2% 12%;
+}
+
+.seller-trans-container select {
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  background: #FBFBFC;
+  border-radius: 5px;
+}
+
+
+/* Update Actions in Seller Page */
+
+.update-container {
+  margin: 1.5% 12%;
+}
+
+.update-container form {
+  margin-top: 30px;
+}
